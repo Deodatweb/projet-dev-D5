@@ -43,6 +43,7 @@
     color: var(--main-color);
     margin: 0.5rem 1.5rem 0.5rem 0;
     transition: 0.5s ease;
+    text-decoration: none;
   }
   
   .social-media a:hover {
