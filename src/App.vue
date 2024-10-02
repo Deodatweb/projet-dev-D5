@@ -1,19 +1,19 @@
 <template>
   <div>
-      <Header />
+      <HeaderItem />
       <router-view />
-      <Footer />
+      <FooterItem />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
+import HeaderItem from './components/HeaderItem.vue';
+import FooterItem from './components/FooterItem.vue';
 
 export default {
     components: {
-        Header,
-        Footer,
+        HeaderItem,
+        FooterItem,
     },
 };
 </script>

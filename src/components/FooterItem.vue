@@ -1,6 +1,6 @@
 <template>
     <footer>
-      <p>&copy; 2024 par Deodatweb | Tous droits réservés - Dernière mise à jour : {{ lastUpdated }}</p>
+      <p>&copy; 2024 par Deodatweb | Tous droits réservés - <span>Dernière mise à jour : {{ lastModifiedDate }}</span></p>
       <div class="social-media">
         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
@@ -10,16 +10,24 @@
     </footer>
   </template>
   
-  <script>
-  import { ref, onMounted } from 'vue';
-  
+  <script>  
   export default {
       data() {
-          return {
-              lastUpdated: new Date(document.lastModified).toLocaleDateString()
-          };
+        return {
+          lastModifiedDate: '',
+        };
       },
-      name: "Footer",
+      mounted() {
+        this.updateLastModifiedDate();
+      },
+      methods: {
+        updateLastModifiedDate() {
+          const lastModified = document.lastModified;
+
+          this.lastModifiedDate = new Date(lastModified).toLocaleDateString();
+        },
+      },
+      name: "FooterItem",
   };
   </script>
   
@@ -28,6 +36,10 @@
     text-align: center;
     padding: 1rem 0;
     font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 1rem;
   }
   
   .social-media a {
@@ -43,6 +55,7 @@
     color: var(--main-color);
     margin: 0.5rem 1.5rem 0.5rem 0;
     transition: 0.5s ease;
+    text-decoration: none;
   }
   
   .social-media a:hover {
