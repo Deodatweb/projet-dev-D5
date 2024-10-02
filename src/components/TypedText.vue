@@ -16,7 +16,7 @@ export default {
 
     onMounted(() => {
       const options = {
-        strings: ['Développeur web junior', 'Web Designer', 'Photographe'],
+        strings: ['Développeur web junior', 'Photographe', 'Requetteur SQL', 'Programmeur VBA'],
         typeSpeed: 70,
         backSpeed: 70,
         backDelay: 1000,

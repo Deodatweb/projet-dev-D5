@@ -5,80 +5,22 @@
             <h3>Hello, je m'appelle</h3>
             <h1>Frédéric D.</h1>
             <TypedText />
-            <p>Passionné d'informatique et notamment par la création de sites web, je me suis inscrit au CEF pour obtenir une certification de développeur web.</p>
+            <p>Passionné d'informatique et notamment par la création de sites internet, je travaille tous les week-end afin d'obtenir une certification de développeur web par le biais du CEF.</p>
         </div>
         <div class="home-img">
             <img src="../icons/clavier_gris.jpg" alt="Photo d'un clavier d'ordinateur gris">
         </div>
     </section>
 
-    <!-- PORTFOLIO SECTION DESIGN -->
-    <section class="projet" id="projet">
-        <h2 class="heading">Mes derniers <span>projets</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="../icons/clavier_gris.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="../icons/clavier_gris.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="../icons/clavier_gris.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="../icons/clavier_gris.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="../icons/clavier_gris.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="../icons/clavier_gris.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-      <ContactForm />
+    <ProjetsCreations />
+    <ContactForm />
 
 </template>
 
 <script>
 import TypedText from '@/components/TypedText.vue';
 import ContactForm from '@/components/ContactForm.vue';
+import ProjetsCreations from '@/components/ProjetsCreations.vue';
 
 export default {
   name: 'HomeView',
@@ -86,6 +28,7 @@ export default {
   components: {
     TypedText,
     ContactForm,
+    ProjetsCreations,
   }
 }
 </script>
