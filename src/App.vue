@@ -1,18 +1,21 @@
 <template>
   <div>
-      <Footer />
+      <HeaderNav />
+      <router-view />
+      <Foot />
   </div>
 </template>
 
 <script>
-import Footer from './components/Footer.vue';
+import HeaderNav from './components/HeaderNav.vue';
+import Foot from './components/Foot.vue';
 
 export default {
-  components: {
-      Footer,
-  },
+    components: {
+        HeaderNav,
+        Foot,
+    },
 };
-
 </script>
 
 <style scoped>
