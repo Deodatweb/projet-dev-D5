@@ -1,6 +1,6 @@
 <template>
-    <div>
-
+    <div class="contact" id="contact">
+        <h1>Me contacter</h1>
     </div>
 </template>
 
@@ -10,6 +10,9 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.contact {
+    height: 100vh;
+    background: red;
+}
 </style>

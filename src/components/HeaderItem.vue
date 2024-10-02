@@ -8,8 +8,8 @@
     <nav>
       <ul>
         <li><router-link to="/">Accueil</router-link></li>
-        <li><router-link to="/projets">Projets</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
+        <li><router-link to="/projets" href="#projet">Projets</router-link></li>
+        <li><router-link to="/contact" href="#contact">Contact</router-link></li>
       </ul>
     </nav>
   </header>
