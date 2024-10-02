@@ -14,6 +14,9 @@
 </script>
 
 <style scoped>
+div {
+    padding-top: 100px;
+}
 h1, p {
     display: flex;
     justify-content: center;
@@ -23,8 +26,8 @@ h1, p {
 img {
     display: flex;
     margin: auto;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
 }
 

@@ -7,9 +7,9 @@
     </div>
     <nav>
       <ul>
-        <li><router-link to="/">Accueil</router-link></li>
-        <li><router-link to="/projets" href="#projet">Projets</router-link></li>
-        <li><router-link to="/contact" href="#contact">Contact</router-link></li>
+        <li><router-link to="/">Présentation</router-link></li>
+        <li><a href="#projet">Créations</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -24,16 +24,18 @@ export default {
 <style scoped>
 /* HOME */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
 }
 
 nav ul {
@@ -44,7 +46,7 @@ nav ul {
 }
 
 nav li {
-  margin-left: 24px;
+  margin-right: 40px;
 }
 
 nav a {
