@@ -3,7 +3,7 @@
   --snd-bg-color: #dcdcdc;
   --text-color: #fff;
   --main-color: #2f4f4f;
-  /* --main-color: #adff2f; */
+  /* --main-color: #ADFF2F; */
 }
 
 body {
@@ -11,11 +11,6 @@ body {
   padding: 0;
   background: var(--bg-color);
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  color: greenyellow;
+  /* scroll-behavior: smooth; */
+  font-family: Arial, Helvetica, sans-serif;
 }
