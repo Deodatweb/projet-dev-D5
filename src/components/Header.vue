@@ -1,11 +1,13 @@
 <template>
   <header>
-    <a href="/">
+    <div class="logo">
+      <a href="/">
       <img
         src="../icons/logo2.png"
         alt="Logo de Deodatweb agence de création de site web"
-        class="logo"
     /></a>
+    </div>
+
     <nav>
       <ul>
         <li><router-link to="/">Accueil</router-link></li>
@@ -74,35 +76,37 @@ nav ul li a {
 } */
 
 /* HOME */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-.logo {
-    font-size: 2.5rem;
-    color: var(--main-color);
-    font-weight: 700;
-    cursor: default;
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 24px;
 }
 
 nav a {
-    font-size: 1.8rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-nav a:hover,
-nav a.active {
-    color: var(--text-color);
+nav a:hover {
+  text-decoration: underline;
 }
 </style>
