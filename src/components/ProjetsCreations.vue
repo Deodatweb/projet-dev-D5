@@ -12,7 +12,7 @@
 
       <!-- Modal pour afficher les détails du projet -->
       <ModalCreations :isOpen="isModalOpen" @close="isModalOpen = false">
-        <h2>{{ selectedProject?.name }}</h2>
+        <h2 class="title">{{ selectedProject?.name }}</h2>
         <p>{{ selectedProject?.date_creation }}</p>
         <p>{{ selectedProject?.technology }}</p>
         <img :src="selectedProject?.image" class="project-image" alt="Image du projet">
@@ -46,9 +46,9 @@ export default {
         {
           id: 2,
           name: 'Cahier des charges',
-          date_creation: '15/04/2024',
+          date_creation: '16/03/2024',
           description: 'Description du projet 2',
-          image: '/images/clavier_blanc.jpg',
+          image: '/images/cahier_des_charges_.jpg',
           technology: 'HTML & CSS',
           link: '#'
         },
@@ -143,7 +143,7 @@ span {
 
 .project-image {
   width: 100%;
-  height: auto;
+  height: 335px;
   border-radius: 4px;
 }
 

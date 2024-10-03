@@ -3,7 +3,7 @@
    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, je m'appelle</h3>
-            <h1>Frédéric D.</h1>
+            <h1>Freddy RICHE</h1>
             <TypedText />
             <p>Passionné d'informatique et notamment par la création de sites internet, je travaille tous les week-end afin d'obtenir une certification de développeur web par le biais du CEF.</p>
         </div>
