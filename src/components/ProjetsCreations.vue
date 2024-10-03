@@ -84,9 +84,9 @@ export default {
           name: 'Site : Vr Cils Studio',
           date_creation: '15/07/2024',
           description: 'Description du projet 6',
-          image: '/images/clavier_blanc.jpg',
+          image: '/images/vr_cils_studio_.jpg',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
-          link: '#'
+          link: 'https://github.com/Deodatweb/Vr_cils_studio'
         }
       ]
     }
