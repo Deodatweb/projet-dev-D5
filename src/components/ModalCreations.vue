@@ -2,7 +2,9 @@
     <div v-if="isOpen" class="modal-overlay" @click="close">
         <div class="modal-content" @click.stop>
             <button class="close-btn" @click="close">X</button>
-            <slot></slot>
+            <div class="modal-body">
+                <slot></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -28,9 +30,9 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,6 +47,13 @@
         max-width: 500px;
         height: 60%;
         position: relative;
+    }
+
+    .modal-body {
+        margin: 20px;
+        overflow-y: auto;
+        height: 100%;
+        flex-grow: 1;
     }
 
     .close-btn {

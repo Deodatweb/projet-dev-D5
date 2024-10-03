@@ -41,51 +41,51 @@ export default {
           description: 'Description du projet 2',
           image: '/images/CV_.jpg',
           technology: 'Technologie utilisée : HTML & CSS',
-          link: '#'
+          link: 'https://github.com/Deodatweb/projet-dev-D2'
         },
         {
           id: 2,
           name: 'Cahier des charges',
-          date_creation: '16/03/2024',
+          date_creation: 'Date : 16/03/2024',
           description: 'Description du projet 2',
           image: '/images/cahier_des_charges_.jpg',
-          technology: 'HTML & CSS',
-          link: '#'
+          technology: 'Technologie utilisé : PowerPoint & Word',
+          link: '/public/CAHIER DES CHARGES LA SOCKETTERIE.pdf'
         },
         {
           id: 3,
           name: "Dynamisme d'un site communautaire",
-          date_creation: '15/04/2024',
+          date_creation: 'Date : 15/04/2024',
           description: 'Description du projet 3',
-          image: '/images/clavier_blanc.jpg',
-          technology: 'HTML & CSS',
-          link: '#'
+          image: '/images/commentaires_.jpg',
+          technology: 'Technologie utilisée : HTML & CSS & JAVASCRIPT',
+          link: 'https://github.com/Deodatweb/projet-dev-D4'
         },
         {
           id: 4,
-          name: 'Projet 4',
-          date_creation: '15/04/2024',
+          name: 'Site : CILS BY CHLOE',
+          date_creation: 'Date : 19/08/2020',
           description: 'Description du projet 4',
-          image: '/images/clavier_blanc.jpg',
-          technology: 'HTML & CSS',
-          link: '#'
+          image: '/images/cils_by_chloe_.jpg',
+          technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
+          link: 'https://github.com/Deodatweb/Cils_by_chloe/tree/main/CilsbyChloe'
         },
         {
           id: 5,
-          name: 'Projet 5',
-          date_creation: '15/04/2024',
+          name: 'site : Brasserie des 200 brasses',
+          date_creation: 'Date 08/08/2021',
           description: 'Description du projet 5',
-          image: '/images/clavier_blanc.jpg',
-          technology: 'HTML & CSS',
+          image: '/images/200_brasses_.jpg',
+          technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
           link: '#'
         },
         {
           id: 6,
-          name: 'Projet 6',
-          date_creation: '15/04/2024',
+          name: 'Site : Vr Cils Studio',
+          date_creation: '15/07/2024',
           description: 'Description du projet 6',
           image: '/images/clavier_blanc.jpg',
-          technology: 'HTML & CSS',
+          technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
           link: '#'
         }
       ]
