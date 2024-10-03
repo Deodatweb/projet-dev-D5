@@ -7,7 +7,7 @@
     </div>
     <nav>
       <ul>
-        <li><router-link to="/">Présentation</router-link></li>
+        <li><a href="/">Présentation</a></li>
         <li><a href="#projet">Créations</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -17,21 +17,22 @@
 
 <script>
 export default {
-  name: 'HeaderItem',
+  name: 'HeaderItem', 
 }
 </script>
 
 <style scoped>
 /* HOME */
 header {
-    position: fixed;
-    width: 100%;
-    padding: 20px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 .logo img {
@@ -56,6 +57,10 @@ nav a {
 }
 
 nav a:hover {
+  text-decoration: underline;
+}
+
+.active {
   text-decoration: underline;
 }
 </style>

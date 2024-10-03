@@ -2,10 +2,10 @@
     <footer>
       <p>&copy; 2024 par Deodatweb | Tous droits réservés - <span>Dernière mise à jour : {{ lastModifiedDate }}</span></p>
       <div class="social-media">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+        <a href="https://discord.com" target="_blank"><font-awesome-icon icon="fa-brands fa-discord" /></a>
+        <a href="https://github.com" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
+        <a href="https://www.linkedin.com/" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin-in" /></a>
       </div>
     </footer>
   </template>
