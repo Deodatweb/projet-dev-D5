@@ -1,10 +1,10 @@
 <template>
     <!-- CONTACT SECTION DESIGN -->
-     <br><br>
+     <br>
     <section class="contact" id="contact">
       <br><br>
       <h2 class="heading">Me <span>contacter</span></h2>
-      <form action="mailto: deodatweb@gmail.com">
+      <form action="Mailto: deodatweb@gmail.com">
         <div class="input-box">
           <input type="text" placeholder="Nom">
           <input type="text" placeholder="Prénom">
@@ -15,7 +15,7 @@
       </form>
     </section>
   </template>
-  
+
   <script>
   export default {
     name: 'ContactView'

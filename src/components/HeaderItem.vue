@@ -7,9 +7,11 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/">Présentation</a></li>
-        <li><a href="#projet">Créations</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li v-for="(item, index) in menuItems" :key="index" :class="{ active: activeItem === item.name}">
+          <a :href="'#' + item.id" @click="setActive(item.name)">
+            {{ item.name }}
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -17,9 +19,25 @@
 
 <script>
 export default {
+  data() {
+    return {
+      menuItems: [
+        { name: 'Présentation', id: 'home'},
+        { name: 'Créations', id: 'projet'},
+        { name: 'Contact', id: 'contact'}
+      ],
+      activeItem: 'Présentation'
+    };
+  },
+  methods: {
+    setActive(itemName) {
+      this.activeItem = itemName;
+    }
+  },
   name: 'HeaderItem', 
 }
-</script>
+</script> 
+
 
 <style scoped>
 /* HOME */
@@ -48,16 +66,15 @@ nav ul {
 
 nav li {
   margin-right: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-color);
 }
 
 nav a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 1.5rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  font-size: 28px;
 }
 
 .active {

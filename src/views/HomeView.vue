@@ -5,7 +5,7 @@
             <h3>Hello, je m'appelle</h3>
             <h1>Freddy RICHE</h1>
             <TypedText />
-            <p>Passionné d'informatique et notamment par la création de sites internet, je travaille tous les week-end afin d'obtenir une certification de développeur web par le biais du CEF.</p>
+            <p>Passionné d'informatique et notamment par la création de sites internet, je travaille tous les week-end afin d'obtenir une certification de développeur web par le biais du Centre Européen de Formation.</p>
         </div>
         <div class="home-img">
             <img src="../icons/clavier_gris.jpg" alt="Photo d'un clavier d'ordinateur gris">

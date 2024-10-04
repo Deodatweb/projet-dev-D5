@@ -16,8 +16,9 @@
         <p>{{ selectedProject?.date_creation }}</p>
         <p>{{ selectedProject?.technology }}</p>
         <img :src="selectedProject?.image" class="project-image" alt="Image du projet">
-        <a :href="selectedProject?.link" target="_blank">Voir le projet</a>
+        <a :href="selectedProject?.link" target="_blank" class="link">En savoir plus</a>
       </ModalCreations>
+      <br>
     </section>
   </div>
 </template>
@@ -147,8 +148,8 @@ span {
   border-radius: 4px;
 }
 
-button {
-  margin-top: 10px;
+button, .link {
+  margin : 10px 0 0 10px;
   padding: 0.8rem 1.5rem;
   background: var(--main-color);
   border-radius: 4rem;
