@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>404</h1>
+    <h1>Erreur 404</h1>
     <img
       src="../icons/clavier_gris.jpg"
       alt="Image d'un clavier d'ordinateur gris figurant sur la page 404 d'erreur"

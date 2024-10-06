@@ -4,20 +4,63 @@
     <section class="contact" id="contact">
       <br><br>
       <h2 class="heading">Me <span>contacter</span></h2>
-      <form action="Mailto: deodatweb@gmail.com">
+      <form @submit.prevent="submitForm">
         <div class="input-box">
-          <input type="text" placeholder="Nom">
-          <input type="text" placeholder="Prénom">
+          <input type="text" v-model="firstname" id="firstname" placeholder="Prénom" required>
+          <input type="text" v-model="name" id="name" placeholder="Nom" required>
         </div>
-        <input type="text" class="objet" placeholder="Objet">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
-        <button class="btn">Envoyer votre message</button>
+        <input type="text" v-model="objet" id="objet" placeholder="Objet" required>
+        <textarea v-model="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Envoyer</button>
       </form>
+      <p v-if="succesMessge">{{ succesMessage }}</p>
+      <p v-if="errorMessge">{{ errorMessage }}</p>
     </section>
   </template>
 
   <script>
+  import emailjs from 'emailjs-com';
+
   export default {
+    data() {
+      return {
+        firstName: '',
+        name:'',
+        objet: '',
+        message: '',
+        succesMessage: '',
+        errorMessage: '',
+      };
+    },
+    methods: {
+      submitForm() {
+        const templateParams = {
+          from_firstname: this.firstname,
+          from_name: this.name,
+          object: this.objet,
+          message: this.message,
+        };
+
+        emailjs.send('service_m9hfnj', 'template_juuzwr8', templateParams, 'b8OXVnjd9X0N2C4oh')
+        .then((response) => {
+          console.log('SUCCES !', response.status, response.text);
+          this.succesMessage = 'Votre message a été envoyé avec succès !';
+          this.errorMessage = '';
+          this.resetForm();
+        })
+        .catch((error) => {
+          console.error('FAILED...', error);
+          this.errorMessage = 'Erreur lors de l\'envoi du message.';
+          this.succesMessage = '';
+        });
+      },
+      resetForm() {
+        this.firstname ='';
+        this.name = '';
+        this.objet = '';
+        this.message = '';
+      },
+    },
     name: 'ContactView'
   }
   </script>
