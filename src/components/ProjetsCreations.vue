@@ -73,7 +73,7 @@ export default {
         },
         {
           id: 5,
-          name: 'site : Brasserie des 200 brasses',
+          name: 'Site : Brasserie des 200 brasses',
           date_creation: 'Date 08/08/2021',
           description: 'Description du projet 5',
           image: '/images/200_brasses_.jpg',

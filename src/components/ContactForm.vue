@@ -13,8 +13,8 @@
         <textarea v-model="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
         <button class="btn" type="submit">Envoyer</button>
       </form>
-      <p v-if="succesMessge">{{ succesMessage }}</p>
-      <p v-if="errorMessge">{{ errorMessage }}</p>
+      <p v-if="succesMessage">{{ succesMessage }}</p>
+      <p v-if="errorMessage">{{ errorMessage }}</p>
     </section>
   </template>
 
@@ -24,7 +24,7 @@
   export default {
     data() {
       return {
-        firstName: '',
+        firstname: '',
         name:'',
         objet: '',
         message: '',
@@ -34,14 +34,22 @@
     },
     methods: {
       submitForm() {
+        const destinataire = import.meta.env.VUE_APP_EMAIL;
+
+        // informations nécessaires pour EmailJS
+        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const userID = import.meta.env.VITE_EMAILJS_USER_ID;
+
         const templateParams = {
           from_firstname: this.firstname,
           from_name: this.name,
-          object: this.objet,
+          objet: this.objet,
           message: this.message,
+          destinataire,
         };
 
-        emailjs.send('service_m9hfnj', 'template_juuzwr8', templateParams, 'b8OXVnjd9X0N2C4oh')
+        emailjs.send(serviceID, templateID, templateParams, userID)
         .then((response) => {
           console.log('SUCCES !', response.status, response.text);
           this.succesMessage = 'Votre message a été envoyé avec succès !';
