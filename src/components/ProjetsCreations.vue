@@ -16,7 +16,7 @@
         <p>{{ selectedProject?.date_creation }}</p>
         <p>{{ selectedProject?.technology }}</p>
         <img :src="selectedProject?.image" class="project-image" alt="Image du projet" />
-        <a :href="selectedProject?.link" target="_blank" class="link">En savoir plus</a>
+        <a :href="selectedProject?.link" target="_blank" class="link">Voir</a>
         <a :href="selectedProject?.link_github" target="_blank" class="link">Lien Github</a>
       </ModalCreations>
       <br />
@@ -40,17 +40,15 @@ export default {
           id: 1,
           name: 'Curriculum Vitae',
           date_creation: 'Date : 25/02/2024',
-          description: 'Description du projet 2',
           image: '/images/CV_.jpg',
           technology: 'Technologie utilisée : HTML & CSS',
-          link: 'https://github.com/Deodatweb/projet-dev-D2/index.html',
+          link: '/projet-dev-D2/index.html',
           link_github: 'https://github.com/Deodatweb/projet-dev-D2'
         },
         {
           id: 2,
           name: 'Cahier des charges',
           date_creation: 'Date : 16/03/2024',
-          description: 'Description du projet 2',
           image: '/images/cahier_des_charges_.jpg',
           technology: 'Technologie utilisé : PowerPoint & Word',
           link: '/CAHIER DES CHARGES LA SOCKETTERIE.pdf'
@@ -59,40 +57,36 @@ export default {
           id: 3,
           name: "Dynamisme d'un site communautaire",
           date_creation: 'Date : 15/04/2024',
-          description: 'Description du projet 3',
           image: '/images/commentaires_.jpg',
           technology: 'Technologie utilisée : HTML & CSS & JAVASCRIPT',
-          link: '#',
+          link: '/projet-dev-D4/index.html',
           link_github: 'https://github.com/Deodatweb/projet-dev-D4'
         },
         {
           id: 4,
-          name: 'Site : CILS BY CHLOE',
+          name: 'Site : CILS BY CHLOE (projet)',
           date_creation: 'Date : 19/08/2020',
-          description: 'Description du projet 4',
           image: '/images/cils_by_chloe_.jpg',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
-          link: '#',
+          link: '/CilsbyChloe/index.html',
           link_github: 'https://github.com/Deodatweb/Cils_by_chloe/tree/main/CilsbyChloe'
         },
         {
           id: 5,
           name: 'Site : Brasserie des 200 brasses (projet)',
           date_creation: 'Date : 08/08/2021',
-          description: 'Description du projet 5',
           image: '/images/200_brasses_.jpg',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
-          link: '#',
+          link: '/200_brasses/index.html',
           link_github: 'https://github.com/Deodatweb/Les_200_brasses'
         },
         {
           id: 6,
-          name: 'Site : Vr Cils Studio (projet)',
+          name: 'Site : Vr Cils Studio (projet en cours)',
           date_creation: 'Date : 15/07/2024',
-          description: 'Description du projet 6',
           image: '/images/vr_cils_studio_.jpg',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
-          link: '#',
+          link: '/VRCilsStudio/index.html',
           link_github: 'https://github.com/Deodatweb/Vr_cils_studio'
         }
       ]
