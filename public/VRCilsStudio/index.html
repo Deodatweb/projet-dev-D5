@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <title>VR CILS STUDIO | Site officiel</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="img/Cilstudiovr.jpg" />
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section class="accueil" id="accueil">
+    <div class="header">
+      <div class="header_texture"></div>
+      <div class="header_mask">
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#fff"></path>
+        </svg>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top color">
+
+        <img class="logo" src="img/logo.png" alt="logo VR Cils Studio">
+
+        <a href="https://www.facebook.com/profile.php?id=61557206325230&mibextid=LQQJ4d" class="navbar-brand"
+          target="_blank">
+          <img class="facebook" src="img/facebook.png" alt="logo Facebook">
+        </a>
+        <a href="https://www.instagram.com/vr_cilstudio/?igsh=ejF2OGk0amZnODdw&utm_source=qr" class="navbar-brand"
+          target="_blank">
+          <img class="instagram" src="img/instagram.png" alt="logo Instagram">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prestations">Prestations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#actualites">Actualités</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br>
+    <div class="container_btn header_slogan">
+      <a href="" type="button" class="header_btn" data-toggle="modal" data-target="#staticBackdrop">Horaires et
+        Informations</a>
+    </div>
+    <br><br>
+    <div class="container_btn header_slogan">
+      <a href="" type="button" class="header_btn" data-toggle="modal" data-target="#staticBackdroprdv">Prendre un
+        RDV</a>
+    </div>
+  </section>
+
+
+  <!-- Modal -->
+  <section>
+    <div id="staticBackdrop" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Horaires et Informations</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="tel">
+              <h5>ADRESSE DU CABINET</h5>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.0702444340254!2d6.151706276325296!3d49.27506617129386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479526867cb83d7b%3A0xc96282c5ec5a6c74!2s39%20bis%20Rte%20de%20Boussange%2C%2057270%20Richemont!5e0!3m2!1sfr!2sfr!4v1721582178160!5m2!1sfr!2sfr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe><br /><br />
+              <h5>HORAIRES</h5>
+              <label for="time"></label>
+              <select name="time" id="time">
+                <option value="lundi">Lundi : 9h00 - 14h00 | 14h00 - 18h00</option>
+                <option value="mardi">Mardi : 9h00 - 14h00 | 14h00 - 18h00</option>
+                <option value="mercredi">Mercredi : 9h00 - 14h00 | 14h00 - 18h00</option>
+                <option value="jeudi">Jeudi : 99h00 - 14h00 | 14h00 - 18h00</option>
+                <option value="vendredi">Vendredi : 9h00 - 14h00 | 14h00 - 18h00</option>
+                <option value="samedi">Samedi : 9h00 - 12h00</option>
+                <option value="dimanche">Dimanche : FERMÉ</option>
+              </select>
+            </div>
+            <br />
+            <div class="tel">
+              <h5>COORDONNÉES</h5>
+              <img src="img/tel.jpg" alt="Tel"><a>07 89 07 53 97</a>
+            </div>
+            <div class="mail">
+              <img src="img/mail.jpg" alt="Mail"><a href="">à definir</a>
+            </div>
+            <br />
+            <div class="tel">
+              <h5>INFORMATIONS</h5>
+              <h6>&bull; Présentation</h6>
+              <p>Transformez votre regard avec nos extensions de cils, légers, durables et tellement glamours.</p>
+              <p>Quels sont les avantages ?</p>
+              <p>Les extensions de cils offrent plusieurs avantages pour celles et ceux qui souhaitent améliorer leur
+                regard.</p>
+              <p>Voici quelques-uns des bénéfices les plus appréciés :</p>
+              <p><span>Aspect magnifique</span> : Elles donnent un aspect long, plein et souple en permanence pour un
+                regard de princesse sans effort.</p>
+              <p><span>Gain de temps</span> : Plus besoin d’appliquer du mascara tous les jours ce qui économise du
+                temps dans la routine de maquillage.</p>
+              <p><span>Personnalisation</span> : Les extensions sont disponibles en différentes longueurs, épaisseurs et
+                courbures pour s’adapter à chaque style et préférence.</p>
+              <p><span>Résistance à l’eau</span> : Elles permettent de se baigner, nager et pratiquer des activités sans
+                craindre que le maquillage ne coule ou ne tache.</p>
+              <p>Il est important de noter que pour maintenir ces avantages, il est recommandé de faire poser les
+                extensions par un professionnel agréé et de suivre les conseils d’entretien appropriés.</p>
+              <p class="bold">Alors n’hésitez pas à fixer un rdv avec moi.</p>
+              <br>
+              <h6>&bull; Informations pratiques</h6>
+              <p>Je vous laisse les réseaux sociaux où vous pouvez trouver plus d’informations (services, promotions en
+                cours etc..)</p>
+              <p>Lorsque vous êtes sûr du service spécifique que vous souhaitez, fixez le rendez-vous.</p>
+              <p>Aidez-nous à vous offrir le meilleur service !</p>
+              <p>Uniquement sur RDV (veuillez respecter l’heure du Rdv). Passé 10 min, le rdv sera annulé et aucun
+                remboursement ne pourra être demandé.</p>
+              <p>J’espère que vous comprenez l’importance du temps dédié pour vous et le respect envers les autres
+                clientes.</p>
+            </div>
+            <br />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <section>
+    <div id="staticBackdroprdv" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="calendar">
+            <div class="modal-header">
+              <h4 class="modal-title month">Prendre un RDV</h4>
+              <div class="btn">
+                <div class="btn today-btn">
+                  <i class="fas fa-calendar-day"></i>
+                </div>
+                <div class="btn prev-btn">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="btn next-btn">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="weekdays">
+              <div class="day">Lun</div>
+              <div class="day">Mar</div>
+              <div class="day">Mer</div>
+              <div class="day">Jeu</div>
+              <div class="day">Ven</div>
+              <div class="day">Sam</div>
+              <div class="day">Dim</div>
+            </div>
+            <div class="days">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- PRESTATIONS -->
+  <div id="prestations"></div>
+
+  <h1>PRESTATIONS</h1>
+  <h2 class="info-title title">&bull; Beauté du regard</h2>
+  <br>
+  <section class="info-section">
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Réhaussement de cils</h5>
+            <p>5.00 € - 1h00</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Beauté du regard/Rehaussement de Cils/image.jpg" class="img-fluid rounded-start"
+            alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Cil à cil (pose complète)</h5>
+            <p>10.00 € - 3h00</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Beauté du regard/Cil à cil/image.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Flat (pose complète)</h5>
+            <p>10.00 € - 1h45</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Beauté du regard/Flat/image.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Mixte (pose complète)</h5>
+            <p>10.00 € - 3h00</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Beauté du regard/Mixte/image.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Hawaïen (pose complète)</h5>
+            <p>10.00 € - 1h45</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Beauté du regard/Hawaien/image.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Volume 3D, 4D (pose complète)</h5>
+            <p>10.00 € - 3h00</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Beauté du regard/Volume 3D/image.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <h2 class="info-title title">&bull; Onglerie</h2>
+  <br>
+
+  <section class="info-section">
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Pose capsules</h5>
+            <p>10.00 € - 3h00</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Onglerie/Pose capsules/image.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Remplissage</h5>
+            <p>10.00 € - 2h00</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <!-- <img src="" class="img-fluid rounded-start" alt="..."> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Gainage</h5>
+            <p>10.00 € - 2h00</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <img src="Prestations/Onglerie/Gainage/image.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Dépose</h5>
+            <p>10.00 € - 0h35</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <!-- <img src="" class="img-fluid rounded-start" alt="..."> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title sous_title">Manucure + vernis semi.. transparent</h5>
+            <p>8.00 € - 0h35</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          </div>
+        </div>
+        <div class="col-md-4 container-info-photo">
+          <!-- <img src="" class="img-fluid rounded-start" alt="..."> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTUALITES -->
+  <div id="actualites"></div>
+
+  <h1>ACTUALITES</h1>
+  <p>Page en cours de construction</p>
+  <section class="info-section_act">
+
+  </section>
+
+
+  <!-- TOP -->
+  <div id="myID" class="hide">
+    <div class="btntop">
+      <a href="#" class="gotopbtn"><img src="img//up_blanc.png" title="Haut" class="imgup" width="20" height="25"></a>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <p class="footer_texture-text">&copy; Copyright 2024 - DEODATWEB</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
