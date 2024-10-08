@@ -20,7 +20,8 @@ export default {
   setup() {
     const siteData = reactive({
       title: 'Portfolio | Freddy RICHE',
-      description: 'Développeur Web junior, je crée des sites performants et ergonomiques. Découvrez mes projets et contactez-moi pour vos besoins en développement.'
+      description:
+        'Développeur Web junior, je crée des sites performants et ergonomiques. Découvrez mes projets et contactez-moi pour vos besoins en développement.'
     })
     useHead({
       title: computed(() => siteData.title),

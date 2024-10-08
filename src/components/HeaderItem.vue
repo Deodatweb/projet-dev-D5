@@ -7,7 +7,11 @@
     </div>
     <nav>
       <ul>
-        <li v-for="(item, index) in menuItems" :key="index" :class="{ active: activeItem === item.name}">
+        <li
+          v-for="(item, index) in menuItems"
+          :key="index"
+          :class="{ active: activeItem === item.name }"
+        >
           <a :href="'#' + item.id" @click="setActive(item.name)">
             {{ item.name }}
           </a>
@@ -22,22 +26,21 @@ export default {
   data() {
     return {
       menuItems: [
-        { name: 'Présentation', id: 'home'},
-        { name: 'Créations', id: 'projet'},
-        { name: 'Contact', id: 'contact'}
+        { name: 'Présentation', id: 'home' },
+        { name: 'Créations', id: 'projet' },
+        { name: 'Contact', id: 'contact' }
       ],
       activeItem: 'Présentation'
-    };
+    }
   },
   methods: {
     setActive(itemName) {
-      this.activeItem = itemName;
+      this.activeItem = itemName
     }
   },
-  name: 'HeaderItem', 
+  name: 'HeaderItem'
 }
-</script> 
-
+</script>
 
 <style scoped>
 /* HOME */

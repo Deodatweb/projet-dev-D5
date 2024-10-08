@@ -33,3 +33,13 @@ npm run build
 ```sh
 npm run lint
 ```
+
+Prérequis:
+
+- Structurer les pages selon les recommandations du W3C pour le web et le web mobile
+- Coder les pages web statiques et adaptables, y compris pour le web mobile, avec un langage de balise et feuilles de style, en suivant les principes de qualité et dans un style défensif en veillant à rendre l’application la plus résiliente possible
+- Utiliser un framework de type adaptatif, y compris pour le web mobile
+- Utiliser un outil de gestion de version de code source
+- Planifier et suivre les tâches de développement
+- Rechercher une réponse pertinente à une difficulté technique de rendu et d’accessibilité
+- Utiliser un outil collaboratif de partage de fichiers
