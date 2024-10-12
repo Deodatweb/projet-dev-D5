@@ -2,7 +2,7 @@
   <header>
     <div class="logo">
       <a href="/">
-        <img src="../icons/logo2.png" alt="Logo de Deodatweb agence de création de site web"
+        <img src="../icons/logo2.png" alt="Logo de Deodatweb, agence de création de site web"
       /></a>
     </div>
     <nav>

@@ -5,17 +5,17 @@
       <span>Date de dernière mise à jour : {{ lastModifiedDate }}</span>
     </p>
     <div class="social-media">
-      <a href="https://www.facebook.com/" target="_blank"
-        ><font-awesome-icon icon="fa-brands fa-facebook"
+      <a href="https://www.facebook.com/" target="_blank" 
+        ><font-awesome-icon icon="fa-brands fa-facebook" title="Logo Facebook"
       /></a>
-      <a href="https://discord.com/" target="_blank"
-        ><font-awesome-icon icon="fa-brands fa-discord"
+      <a href="https://discord.com/" target="_blank" 
+        ><font-awesome-icon icon="fa-brands fa-discord" title="Logo Discord"
       /></a>
-      <a href="https://github.com/Deodatweb/" target="_blank"
-        ><font-awesome-icon icon="fa-brands fa-github"
+      <a href="https://github.com/Deodatweb/" target="_blank" 
+        ><font-awesome-icon icon="fa-brands fa-github" title="Logo Github"
       /></a>
-      <a href="https://www.linkedin.com/" target="_blank"
-        ><font-awesome-icon icon="fa-brands fa-linkedin-in"
+      <a href="https://www.linkedin.com/" target="_blank" 
+        ><font-awesome-icon icon="fa-brands fa-linkedin-in" title="Logo Linkedin"
       /></a>
     </div>
   </footer>

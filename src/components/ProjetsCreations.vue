@@ -5,7 +5,7 @@
       <div class="projects">
         <div v-for="project in projects" :key="project.id" class="project-card">
           <h2>{{ project.name }}</h2>
-          <img :src="project.image" class="project-image" alt="Image du projet" />
+          <img :src="project.image" class="project-image" :alt="project.alt" />
           <button @click="openModal(project)">Détails</button>
         </div>
       </div>
@@ -15,7 +15,7 @@
         <h2 class="title">{{ selectedProject?.name }}</h2>
         <p>{{ selectedProject?.date_creation }}</p>
         <p>{{ selectedProject?.technology }}</p>
-        <img :src="selectedProject?.image" class="project-image" alt="Image du projet" />
+        <img :src="selectedProject?.image" class="project-image" :alt="project.alt" />
         <a :href="selectedProject?.link" target="_blank" class="link">Voir</a>
         <a :href="selectedProject?.link_github" target="_blank" class="link">Lien Github</a>
       </ModalCreations>
@@ -41,6 +41,7 @@ export default {
           name: 'Curriculum Vitae',
           date_creation: 'Date : 25/02/2024',
           image: '/images/CV_.jpg',
+          alt: 'image du Curriculum Vitae',
           technology: 'Technologie utilisée : HTML & CSS',
           link: '/projet-dev-D2/index.html',
           link_github: 'https://github.com/Deodatweb/projet-dev-D2'
@@ -50,6 +51,7 @@ export default {
           name: 'Cahier des charges',
           date_creation: 'Date : 16/03/2024',
           image: '/images/cahier_des_charges_.jpg',
+          alt: 'image du Cahier des charges',
           technology: 'Technologie utilisé : PowerPoint & Word',
           link: '/CAHIER DES CHARGES LA SOCKETTERIE.pdf'
         },
@@ -58,6 +60,7 @@ export default {
           name: "Dynamisme d'un site communautaire",
           date_creation: 'Date : 15/04/2024',
           image: '/images/commentaires_.jpg',
+          alt: 'image du Dynamisme d\'un site communautaire',
           technology: 'Technologie utilisée : HTML & CSS & JAVASCRIPT',
           link: '/projet-dev-D4/index.html',
           link_github: 'https://github.com/Deodatweb/projet-dev-D4'
@@ -67,6 +70,7 @@ export default {
           name: 'Site : CILS BY CHLOE (projet)',
           date_creation: 'Date : 19/08/2020',
           image: '/images/cils_by_chloe_.jpg',
+          alt: 'image du site : CILS BY CHLOE (projet)',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
           link: '/CilsbyChloe/index.html',
           link_github: 'https://github.com/Deodatweb/Cils_by_chloe/tree/main/CilsbyChloe'
@@ -76,6 +80,7 @@ export default {
           name: 'Site : Brasserie des 200 brasses (projet)',
           date_creation: 'Date : 08/08/2021',
           image: '/images/200_brasses_.jpg',
+          alt: 'image du site : Brasserie des 200 brasses (projet)',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
           link: '/200_brasses/index.html',
           link_github: 'https://github.com/Deodatweb/Les_200_brasses'
@@ -85,6 +90,7 @@ export default {
           name: 'Site : Vr Cils Studio (projet en cours)',
           date_creation: 'Date : 15/07/2024',
           image: '/images/vr_cils_studio_.jpg',
+          alt: 'image du site : Vr Cils Studio (projet en cours)',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
           link: '/VRCilsStudio/index.html',
           link_github: 'https://github.com/Deodatweb/Vr_cils_studio'
