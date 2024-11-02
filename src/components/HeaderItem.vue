@@ -1,13 +1,18 @@
 <template>
+  <!-- HEADER DESIGN -->
   <header>
     <div class="logo">
       <a href="/">
-        <img src="../icons/logo2.png" alt="Logo de Deodatweb agence de création de site web"
+        <img src="../icons/logo2.png" alt="Logo de Deodatweb, agence de création de site web" title="Retour à l'accueil"
       /></a>
     </div>
     <nav>
       <ul>
-        <li v-for="(item, index) in menuItems" :key="index" :class="{ active: activeItem === item.name}">
+        <li
+          v-for="(item, index) in menuItems"
+          :key="index"
+          :class="{ active: activeItem === item.name }"
+        >
           <a :href="'#' + item.id" @click="setActive(item.name)">
             {{ item.name }}
           </a>
@@ -22,22 +27,21 @@ export default {
   data() {
     return {
       menuItems: [
-        { name: 'Présentation', id: 'home'},
-        { name: 'Créations', id: 'projet'},
-        { name: 'Contact', id: 'contact'}
+        { name: 'Présentation', id: 'home' },
+        { name: 'Créations', id: 'projet' },
+        { name: 'Contact', id: 'contact' }
       ],
       activeItem: 'Présentation'
-    };
+    }
   },
   methods: {
     setActive(itemName) {
-      this.activeItem = itemName;
+      this.activeItem = itemName
     }
   },
-  name: 'HeaderItem', 
+  name: 'HeaderItem'
 }
-</script> 
-
+</script>
 
 <style scoped>
 /* HOME */

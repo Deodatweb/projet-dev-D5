@@ -1,4 +1,5 @@
 <template>
+  <!-- NotFOUND SECTION -->
   <div>
     <h1>Erreur 404</h1>
     <img

@@ -1,4 +1,5 @@
 <template>
+  <!-- ANIMATION SUR PAGE PRESENTATION -->
   <div>
     <h3>et je suis <span ref="typedElement"></span></h3>
   </div>
@@ -16,7 +17,12 @@ export default {
 
     onMounted(() => {
       const options = {
-        strings: ['Développeur web junior', 'Photographe amateur', 'Développeur SQL', 'Programmeur VBA'],
+        strings: [
+          'Développeur web junior',
+          'Photographe amateur',
+          'Développeur SQL',
+          'Programmeur VBA'
+        ],
         typeSpeed: 70,
         backSpeed: 70,
         backDelay: 1000,
