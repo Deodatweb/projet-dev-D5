@@ -1,4 +1,5 @@
 <template>
+  <!-- MODAL DESIGN -->
   <div v-if="isOpen" class="modal-overlay" @click="close">
     <div class="modal-content" @click.stop>
       <button class="close-btn" @click="close">X</button>

@@ -1,11 +1,12 @@
 <template>
+  <!-- PROJECT DESIGN -->
   <div id="projet">
     <section>
       <h2 class="heading"><span>Mes </span>créations</h2>
       <div class="projects">
         <div v-for="project in projects" :key="project.id" class="project-card">
           <h2>{{ project.name }}</h2>
-          <img :src="project.image" class="project-image" :alt="project.alt" />
+          <img :src="project.image" class="project-image" alt="Image du projet" />
           <button @click="openModal(project)">Détails</button>
         </div>
       </div>
@@ -15,7 +16,7 @@
         <h2 class="title">{{ selectedProject?.name }}</h2>
         <p>{{ selectedProject?.date_creation }}</p>
         <p>{{ selectedProject?.technology }}</p>
-        <img :src="selectedProject?.image" class="project-image" :alt="project.alt" />
+        <img :src="selectedProject?.image" class="project-image" alt="Image du projet" />
         <a :href="selectedProject?.link" target="_blank" class="link">Voir</a>
         <a :href="selectedProject?.link_github" target="_blank" class="link">Lien Github</a>
       </ModalCreations>
@@ -87,10 +88,10 @@ export default {
         },
         {
           id: 6,
-          name: 'Site : Vr Cils Studio (projet en cours)',
+          name: 'Site : Vr Cils Studio (projet)',
           date_creation: 'Date : 15/07/2024',
           image: '/images/vr_cils_studio_.jpg',
-          alt: 'image du site : Vr Cils Studio (projet en cours)',
+          alt: 'image du site : Vr Cils Studio (projet)',
           technology: 'Technologie utilisée : HTML & CSS & BOOTSTRAP',
           link: '/VRCilsStudio/index.html',
           link_github: 'https://github.com/Deodatweb/Vr_cils_studio'
@@ -166,6 +167,7 @@ button,
   letter-spacing: 0.1rem;
   transition: 0.5s ease;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {

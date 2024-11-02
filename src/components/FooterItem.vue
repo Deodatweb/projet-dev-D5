@@ -1,4 +1,5 @@
 <template>
+  <!-- FOOTER DESIGN -->
   <footer>
     <p>
       &copy; 2024 par Deodatweb | Tous droits réservés -

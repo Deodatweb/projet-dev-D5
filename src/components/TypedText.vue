@@ -1,4 +1,5 @@
 <template>
+  <!-- ANIMATION SUR PAGE PRESENTATION -->
   <div>
     <h3>et je suis <span ref="typedElement"></span></h3>
   </div>

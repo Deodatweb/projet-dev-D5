@@ -20,8 +20,8 @@
       ></textarea>
       <button class="btn" type="submit">Envoyer</button>
     </form>
-    <p v-if="succesMessage">{{ succesMessage }}</p>
-    <p v-if="errorMessage">{{ errorMessage }}</p>
+    <p class="succes" v-if="succesMessage">{{ succesMessage }}</p>
+    <p class="error" v-if="errorMessage">{{ errorMessage }}</p>
   </section>
 </template>
 
@@ -170,5 +170,17 @@ form {
 
 .btn:hover {
   box-shadow: none;
+}
+
+.succes {
+  display: flex;
+  justify-content: center;
+  color: var(--notFound-color);
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  color: red;
 }
 </style>
