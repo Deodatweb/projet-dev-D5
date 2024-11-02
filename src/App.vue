@@ -17,6 +17,7 @@ export default {
     HeaderItem,
     FooterItem
   },
+  // SEO du site
   setup() {
     const siteData = reactive({
       title: 'Portfolio | Freddy RICHE',
